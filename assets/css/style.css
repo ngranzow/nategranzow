@@ -65,16 +65,24 @@ header nav ul li a:hover {
     background-image: url(../images/hero.jpg);  
     background-size: cover;  
     display: flex;
-    justify-content: right;
+    flex-direction: column;
     flex-wrap: wrap;
 }
+
+.hero img {
+    width: 20%;
+    margin: 10px 80px 0 0;
+    margin-left: auto;
+    }
 
 .hero h2 {
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    margin: 120px 80px 10px;
+    margin: 0 80px 10px 0;
     font-size: 28px;
     padding: 8px;
+    width: 20%;
+    margin-left: auto;
 }
 /* hero style end */
 
@@ -93,10 +101,6 @@ header nav ul li a:hover {
     width: 20%;
 }
 
-.section-title h2 {
-    font-size: 42px;
-}
-
 .section-content {
     width: 80%;
     display: flex;
@@ -104,3 +108,13 @@ header nav ul li a:hover {
     justify-content: space-between;
     padding-left: 20px;
 }
+
+/* about me start */
+.section-title h2 {
+    font-size: 42px;
+}
+
+.section-content p {
+    margin: 0 0 10px 0;
+}
+/* about me end */
