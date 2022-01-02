@@ -192,3 +192,135 @@ header nav ul li a:hover {
     border-bottom: 5px solid var(--tertiary-color);
 }
 /*contact me end */
+
+/* media query for smaller desktop screens and smaller */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header h1 {
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 5px;
+    }
+
+    header nav {
+        padding: 0;
+    }
+
+    header nav ul {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .section-title h2{
+        font-size: 34px;
+    }
+
+    #other-work {
+        width: 48%;
+    }
+}
+
+/* media query for tablets and smaller */
+@media screen and (max-width: 768px) {
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        border-bottom: 3.5px solid var(--secondary-color);
+    }
+
+    .mywork a img {
+        opacity: 1;
+    }
+
+    .contact-links li a {
+        border-bottom: 3.5px solid var(--tertiary-color);
+    }
+}
+
+/* media query for mobile phone and smaller */
+@media screen and (max-width: 575px) {
+    .hero img {
+        margin: 10px 20px 0 0;
+        margin-left: auto;
+        }
+    
+    .hero h2 {
+        font-size: 10px;
+        margin: 0 20px 10px 0;
+        margin-left: auto;
+    }
+
+    header nav ul li a {
+        font-size: 10px;
+        border-bottom: 2px solid var(--secondary-color);
+    }
+
+    .layout {
+        flex-direction: column;
+    }
+
+    .section-title {
+        border-right: 0;
+        border-bottom: 3.5px solid var(--tertiary-color);
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-right: 0;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+        padding-left: 5px;
+    }
+
+    .section-content {
+        width: 100%;
+        margin: 5px 0 5px 0;
+        padding: 0;
+    }
+
+    .mywork {
+        margin: 0 0 10px 0;
+    }
+
+    .mywork a img {
+        height: 100px;
+    }
+
+    #other-work {
+        width: 100%;
+    }
+
+    .bottomleft {
+        bottom: 10px;
+    }
+    
+    .bottomleft h3 {
+        font-size: 16px;
+    }
+    
+    .bottomleft p{
+        font-size: 12px;
+    }
+
+    .contact-links li a {
+        font-size: 10px;
+        border-bottom: 2px solid var(--tertiary-color);
+    }
+
+    .contact-links {
+        justify-content: space-evenly;
+    }
+
+    .contact-links li a {
+        padding: 2px 5px;
+    }
+}
