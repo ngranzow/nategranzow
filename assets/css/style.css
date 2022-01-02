@@ -124,49 +124,69 @@ header nav ul li a:hover {
 /* work start */
 .mywork {
     color: var(--primary-color);
-    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     flex-direction: row;
-    width: 100%;
+}
+
+.featured-work {
+    position: relative;
     border: 10px solid var(--secondary-color);
-    margin: 0 10px 10px 0;
-}
-
-.mywork a {
     width: 100%;
 }
 
-.mywork a img {
+.featured-work a {
     width: 100%;
-    height: 200px;
+}
+
+.featured-work a img {
+    height: 400px;
+    width: 100%;
     opacity: 0.5;
     vertical-align: top;
     object-fit: cover;
 }
 
-.mywork a img:hover {
+.featured-work a img:hover {
     opacity: 1;
 }
 
-.featured-work a img {
-    height: 400px;
+.other-work {
+    position: relative;
+    border: 10px solid var(--secondary-color);
+    width: 49%;
+    margin-bottom: 10px;
 }
 
-#other-work {
-    width: 49%;
+.other-work a {
+    width: 100%;
+}
+
+.other-work a img {
+    height: 200px;
+    width: 100%;
+    opacity: 0.5;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+.other-work a img:hover {
+    opacity: 1;
 }
 
 .bottomleft {
     position: absolute;
     bottom: 40px;
+    left: 0;
     background: var(--secondary-color);
 }
 
 .bottomleft h3 {
     font-size: 28px;
-    padding: 8px 8px;
+    padding: 8px;
 }
 
 .bottomleft p{
@@ -220,16 +240,19 @@ header nav ul li a:hover {
     .section-title h2{
         font-size: 34px;
     }
-
-    #other-work {
-        width: 48%;
-    }
 }
 
 /* media query for tablets and smaller */
 @media screen and (max-width: 768px) {
+    .hero img {
+        margin: 10px 40px 0 0;
+        margin-left: auto;
+        }
+
     .hero h2 {
+        margin: 0 40px 10px 0;
         font-size: 20px;
+        margin-left: auto;
     }
 
     header nav ul li a {
@@ -295,8 +318,12 @@ header nav ul li a:hover {
         height: 100px;
     }
 
-    #other-work {
-        width: 100%;
+    .featured-work {
+        border: 5px solid var(--secondary-color);
+    }
+
+    .other-work {
+        border: 5px solid var(--secondary-color);
     }
 
     .bottomleft {
@@ -304,11 +331,13 @@ header nav ul li a:hover {
     }
     
     .bottomleft h3 {
-        font-size: 16px;
+        font-size: 10px;
+        padding: 4px;
     }
     
     .bottomleft p{
-        font-size: 12px;
+        font-size: 8px;
+        padding: 0 4px;
     }
 
     .contact-links li a {
